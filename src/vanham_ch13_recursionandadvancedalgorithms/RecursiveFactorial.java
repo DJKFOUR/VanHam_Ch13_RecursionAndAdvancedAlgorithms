@@ -15,8 +15,8 @@ public class RecursiveFactorial {
 //thought of as 5*4! or more generally, n*(n–1)!. By definition, 0! is equal to 1. Compare your recursive solution
 //to the nonrecursive solution created in the Factorial Review completed in Chapter 6.
     
-    public static int factorial(int num) {
-        int result;
+    public static double factorial(double num) {
+        double result;
         
         if (num > 0) {
             result = num * factorial(num-1);
@@ -28,6 +28,6 @@ public class RecursiveFactorial {
     }
     
     public static void main(String[] args) {
-        System.out.println(factorial(5)); //Doesnt work after 12 due to the fact that ints can't hold a number that large?
+        System.out.println(factorial(99));
     }
 }

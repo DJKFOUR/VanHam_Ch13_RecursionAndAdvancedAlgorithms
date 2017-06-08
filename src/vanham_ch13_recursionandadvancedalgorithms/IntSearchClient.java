@@ -1,8 +1,9 @@
 package vanham_ch13_recursionandadvancedalgorithms;
+
 import java.util.Scanner;
 import java.util.Random;
 
-public class SearchClient {
+public class IntSearchClient {
 
     public static void displayArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -11,7 +12,7 @@ public class SearchClient {
         System.out.println("\n");
     }
 
-    public static void sortIntArray() {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int numItems, searchNum, location;
         int[] test;
@@ -40,9 +41,5 @@ public class SearchClient {
             System.out.print("Enter a number to search for: ");
             searchNum = input.nextInt();
         }
-    }
-
-    public static void main(String[] args) {
-        sortIntArray();
     }
 }
